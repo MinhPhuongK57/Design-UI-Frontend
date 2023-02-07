@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body {
+    font-family: $fontFamily__primary;
+    width: 100%;
+    min-height: 100vh;
+    background: #fafaff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1540px;
+    overflow: hidden;
+}
+
+.container__pad {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+img {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        max-width: 768px;
+        overflow: hidden;
+    }
+
+    .container__pad {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .container {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .container__pad {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}

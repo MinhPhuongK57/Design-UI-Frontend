@@ -1,0 +1,132 @@
+.reService {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+
+    &__title {
+        font-size: $fsize__title;
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        outline: none;
+        background: none !important;
+        padding-bottom: 4rem !important;
+
+        &--box {
+            width: 95% !important;
+            display: flex !important;
+            padding: 3rem 0;
+            margin-top: 3rem !important;
+            margin-bottom: 2rem !important;
+            margin-left: 0.5rem !important;
+            border-radius: 0.7rem;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            box-shadow: $bShadowItem;
+
+            &-img {
+                width: 7rem;
+                height: 7rem;
+                object-fit: cover;
+                margin-bottom: 2.5rem;
+            }
+
+            &-title {
+                color: $color__primary;
+                font-size: $fsize__text;
+                font-weight: 400;
+                width: 50%;
+                text-align: center;
+                text-overflow: ellipsis;
+                margin-bottom: 1rem;
+                -webkit-line-clamp: 1;
+                position: relative;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            &-description {
+                width: 70%;
+                text-align: center;
+                font-size: $fsize__subText;
+                line-height: 1.5rem;
+                color: $color__secondary;
+                letter-spacing: 0.1px;
+                margin-top: 1rem;
+                -webkit-line-clamp: 1;
+                position: relative;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            &-button {
+                margin-top: 2rem;
+                width: 15rem;
+                border-radius: 4rem;
+                height: 4rem;
+                font-size: 15px;
+                color: white;
+                background: #277CFB;
+                transition: all 0.3s linear;
+                box-shadow: 0 0 0;
+
+                &:hover {
+                    color: #277CFB;
+                    background: white;
+                    transition: all 0.3s linear;
+                    box-shadow: $bShadowButton;
+                }
+            }
+        }
+    }
+}
+
+.slick-dots li button {
+    &::before {
+        font-size: 15px !important;
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    color: #277CFB !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .reService {
+        width: 100%;
+        max-width: 98%;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__slider {
+            width: 100%;
+
+            &--box {
+                width: 95% !important;
+                margin-bottom: 1rem !important;
+                padding: 4rem 0;
+
+                &-img {
+                    width: 8rem;
+                    height: 8rem;
+                }
+
+                &-button {
+                    font-size: $fsize__subText;
+                }
+            }
+        }
+    }
+}

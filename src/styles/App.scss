@@ -1,0 +1,29 @@
+//Constants
+@import "./constants/reset";
+@import "./constants/variables.scss";
+
+//Global Styles
+@import "./global.scss";
+
+//Slick_Carousel
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+//Scrollbar Style
+@import "./elements/ScrollbarStyle.scss";
+
+//Styles Container
+@import "./containers/Header.scss";
+@import "./containers/Sliders.scss";
+@import "./containers/Intro.scss";
+@import "./containers/AppForUser.scss";
+@import "./containers/FeatureForUser.scss";
+@import "./containers/AppForBusiness.scss";
+@import "./containers/AppForAdmin.scss";
+@import "./containers/ReService.scss";
+@import "./containers/WCAService.scss";
+@import "./containers/TopBusiness.scss";
+@import "./containers/FeedbackToBusiness.scss";
+@import "./containers/Contact.scss";
+@import "./containers/Footer.scss";
+@import "./containers/NavbarResponsive";

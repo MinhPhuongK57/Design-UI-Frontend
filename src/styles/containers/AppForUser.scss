@@ -1,0 +1,133 @@
+.appForUser {
+    width: 100%;
+    margin-top: 16rem;
+    margin-bottom: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 3rem;
+
+    &__img {
+        margin-right: 15rem;
+    }
+
+    &__content {
+        width: 500px;
+
+        h5 {
+            font-size: $fsize__title;
+            color: #000000;
+            font-weight: 500;
+            line-height: 4rem;
+        }
+
+        p {
+            color: $color__secondary;
+            font-size: $fsize__text;
+            margin-top: 2.4rem;
+        }
+
+        &--img {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            img {
+                margin-right: 2.5rem;
+            }
+        }
+
+        &--button {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            color: #277CFB;
+            font-size: $fsize__text;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: all 0.2s ease-in;
+            margin-left: -3rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "\003C";
+                padding-left: 0.5rem;
+                top: 10%;
+                font-size: $fsize__text;
+                color: #277CFB;
+                transform: rotate(-90deg);
+            }
+
+            &:hover {
+                text-decoration: none;
+                transition: all 0.2s ease-out;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .appForUser {
+        flex-direction: column;
+        margin-top: $mt10;
+        margin-bottom: 0rem;
+
+        &__img {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__content {
+            width: 100%;
+            max-width: 90%;
+            margin-top: 5rem;
+
+            p {
+                padding-bottom: 1rem;
+            }
+
+            &--button {
+                margin-left: -0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .appForUser {
+        margin-top: $mt5;
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            max-width: 95%;
+            margin-top: 5rem;
+
+            p {
+                padding-bottom: 1rem;
+            }
+
+            &--button {
+                margin-left: -0;
+            }
+
+            &--img {
+                img:last-child {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}

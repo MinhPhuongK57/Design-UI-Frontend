@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    max-width: 100%;
+    background-color: #383D40;
+    height: 9rem;
+    // position: sticky;
+    // z-index: 999999;
+    // top: 0;
+    opacity: .98;
+    line-height: 9rem;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+        &--logo {
+            font-size: $fsize__title;
+            position: absolute;
+            left: 20%;
+            color: #fff;
+        }
+
+        &--items {
+            font-size: $fsize__text;
+        }
+
+        &--link {
+            display: inline-block;
+            font-weight: 300;
+            color: #fff;
+            margin-right: 4rem;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+
+            &:hover {
+                color: #fff;
+                opacity: .8;
+                transition: all 0.2s linear;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: none;
+    }
+}

@@ -1,0 +1,96 @@
+.wCAService {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1540px;
+    flex-direction: column;
+
+    &__title {
+        font-size: $fsize__title;
+        color: $color__primary;
+        font-weight: 500;
+    }
+
+    &__subTitle {
+        margin-top: 4rem;
+        font-size: $fsize__subText;
+        line-height: 2rem;
+        color: $color__secondary;
+        width: 600px;
+    }
+
+    &__content {
+        margin-top: 5rem;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--item {
+            padding-right: 1rem;
+            border-radius: 3rem;
+            width: 150px;
+            padding: 5rem;
+            box-shadow: $bShadowItem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &-img {
+                width: 8rem;
+                height: 8rem;
+                margin-bottom: 2rem;
+            }
+
+            &-description {
+                font-size: $fsize__text;
+                white-space: nowrap;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wCAService {
+
+        &__content {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4rem;
+
+            &--item {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .wCAService {
+        &__subTitle {
+            width: 100%;
+            max-width: 90%;
+            margin-top: 2rem;
+        }
+
+        &__content {
+            margin-top: 4rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 0;
+            padding-right: 0;
+
+            &--item {
+                width: 160px;
+            }
+        }
+    }
+}
